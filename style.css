@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+body{
+	background-image:url('images/2.jpg');
+}
+.zagolovok{
+	position: fixed;
+	width:100%;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+	font-size:50;
+	font-family:Century Gothic;
+}
+.zagolovok:hover{
+	color:red;
+}
+.content{
+	min-height:620px;
+}
+games{
+	text-align:center;
+	width:25%;
+	background-color:rgba(56, 52, 55,0.5);
+	float:left;
+	border:1px solid #FFF;
+	color:white;
+	font-size:40;
+	height:22%;
+	font-family:Century Gothic;
+}
+games:hover{
+	background-color:rgba(204, 0, 102,0.5);
+}
+.block{
+	background-color:black; 
+	color:white;
+	font-size:20;
+}
+a{
+	text-decoration: none;
+}
