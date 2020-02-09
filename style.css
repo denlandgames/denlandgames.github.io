@@ -22,7 +22,7 @@ body{
 games{
 	text-align:center;
 	width:25%;
-	background-color:rgba(56, 52, 55,0.5);
+	background-color:rgba(0, 0, 0,0.89);
 	float:left;
 	border:1px solid #FFF;
 	color:white;
@@ -31,12 +31,14 @@ games{
 	font-family:Century Gothic;
 }
 games:hover{
-	background-color:rgba(204, 0, 102,0.5);
+	background-color:rgba(204, 0, 102,0.89);
 }
 .block{
+	width:100%;
 	background-color:black; 
 	color:white;
 	font-size:20;
+	float:left;
 }
 a{
 	text-decoration: none;
