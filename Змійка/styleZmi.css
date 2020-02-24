@@ -1,3 +1,20 @@
-.window{
-	margin-left: 200px;
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+#window{
+	margin-left: 30%;
+}
+.zagolovok{
+	width:100%;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+	font-size:50;
+	font-family:Century Gothic;
+}
+.zagolovok:hover{
+	color:red;
+}
+body{
+	background-image:url("Images/bg.jpg");
 }
