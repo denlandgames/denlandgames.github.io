@@ -7,10 +7,51 @@
   <link rel="stylesheet" href="styleZmi.css">
 </head>
 <body>
+  <section>
 	<div class='zagolovok' align="center">Snake</div>
-	<br/>
-	<br/>
  	<div id="window"><canvas id="game" width="608" height="608"></canvas></div>
  	<script src="script.js"></script>
+ 	<!-- <script type="text/javascript">
+var count = -1;
+var counter;
+var nchar;
+var zaderzhka = 220;
+var a = new Array();
+a[1] = "Hello!";
+a[2] = "HELLO!";
+len = a[1].length;
+function animation() {
+ count++
+ if (count == 0){
+   document.volna.display.value = a[1];
+ }
+ if (count == 1){
+   document.volna.display.value = a[2].substring
+   (0, 1) + a[1].substring(len, 1);
+ }
+ if (count > 1){
+   a[3] = a[1].substring(0, count - 1) + a[2].substring(count 
+   - 1,count) + a[1].substring(len, count);
+   document.volna.display.value = a[3];
+ }
+ if(count == a[1].length){
+   count = -1;
+ }
+ counter = setTimeout("animation()",zaderzhka);
+ }
+</script>
+<center>
+  <form name="volna">
+    <input name="display" size="100%" style="border-style:none;font-weight:bold;font-size:15px;">
+  </form>
+  <script type="text/javascript">
+animation();
+</script>
+</center> -->
+<div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </section>
 </body>
 </html>

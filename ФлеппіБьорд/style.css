@@ -5,14 +5,14 @@
 #window{
 	margin-left: 40%;
 }
-.zagolovok{
+.zagolovok2{
 	width:100%;
 	background-color:rgba(0,0,0,0.7);
 	color:white;
-	font-size:50;
+	font-size:500%;
 	font-family:Century Gothic;
 }
-.zagolovok:hover{
+.zagolovok2:hover{
 	color:red;
 }
 body{
