@@ -7,7 +7,12 @@ body{
 	background-image:url('images/at1.gif');
 	/*background-color: black;*/
 }
-
+iframe{
+	float:left;
+	margin-top: 85px;
+	border: red solid 10px;
+	border-radius: 10px;
+}
 section{
 	position: relative;
 	width: 100%;
@@ -86,6 +91,7 @@ section .wave.wave4{
 }
 .content{
 	min-height:620px;
+	float:left;
 }
 games{
 	text-align:center;
