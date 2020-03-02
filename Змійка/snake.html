@@ -5,12 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Игра на JavaScript</title>
   <link rel="stylesheet" href="styleZmi.css">
+  <link rel="stylesheet" href="pstyle.css">
 </head>
 <body>
-  <section>
+
+  <div class="preloader"><svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path></svg></div>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script></div>
+
+
 	<div class='zagolovok' align="center">Snake</div>
+  <br>
  	<div id="window"><canvas id="game" width="608" height="608"></canvas></div>
  	<script src="script.js"></script>
+  <div id="control"><br><img src="Images/control.png"><br><button value="Restart" onclick="restart()" name="send">rtjfhm</button></div>
  	<!-- <script type="text/javascript">
 var count = -1;
 var counter;
@@ -48,10 +66,5 @@ function animation() {
 animation();
 </script>
 </center> -->
-<div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-    <div class="wave wave4"></div>
-  </section>
 </body>
 </html>
