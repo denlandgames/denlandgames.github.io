@@ -68,7 +68,7 @@ function collisionDetection() {
           b.status = 0;
           score++;
           if(score == brickRowCount*brickColumnCount) {
-            alert("YOU WIN, CONGRATS!");
+            alert("YOU WIN!");
           }
         }
       }
@@ -100,7 +100,7 @@ function drawBricks() {
         bricks[c][r].y = brickY;
         ctx.beginPath();
         ctx.rect(brickX, brickY, brickWidth, brickHeight);
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "purple";
         ctx.fill();
         ctx.closePath();
       }

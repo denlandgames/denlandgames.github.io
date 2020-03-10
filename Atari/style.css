@@ -3,4 +3,16 @@ body{
 }
 canvas { 
 	background-image:url(Images/bg.jpg);
+	margin-left:30%;
+	margin-top: 8%;
+	border-top:10px solid lightblue;
+	border-bottom:10px solid lightblue;
+	border-radius: 10px
+}
+.zagolovok{
+	width:100%;
+	background-color:rgba(0,0,0,0.7);
+	color:white;
+	font-size:190%;
+	font-family:Century Gothic;
 }
