@@ -71,9 +71,14 @@ function drawGame() {
     snake.pop();
 
   if(snakeX < box || snakeX > box * 17
-    || snakeY < 3 * box || snakeY > box * 17)
+    || snakeY < 3 * box || snakeY > box * 17){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(ground, 0, 0);
+    ctx.fillStyle = "white";
+    ctx.font = "50px Arial";
+    ctx.fillText(score, box * 2.5, box * 1.7);
     clearInterval(game);
-
+}
   if(dir == "left") snakeX -= box;
   if(dir == "right") snakeX += box;
   if(dir == "up") snakeY -= box;
@@ -83,6 +88,12 @@ function drawGame() {
     x: snakeX,
     y: snakeY
   };
+  var Record = document.getElementById('reco');
+  var rec=0;
+  if(rec<score){
+    rec=score;
+  }
+Record.innerHTML = "найкращий результат: "+rec;
 
   eatTail(newHead, snake);
 
@@ -92,6 +103,7 @@ function drawGame() {
 let game = setInterval(drawGame, 100);
 
 function restart(){
+  score=0
   let food = {
   x: Math.floor((Math.random() * 17 + 1)) * box,
   y: Math.floor((Math.random() * 15 + 3)) * box,
@@ -171,4 +183,9 @@ function drawGame() {
 }
 
 let game = setInterval(drawGame, 100);
+if(rec<score){
+    rec=score;
+  }
+  var Record = document.getElementById('reco');
+  Record.innerHTML = "найкращий результат: "+rec;
 }

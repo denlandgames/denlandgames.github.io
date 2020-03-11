@@ -10,7 +10,9 @@ body{
 iframe{
 	float:left;
 	margin-top: 85px;
-	border: #C24A3B solid 10px;
+	border: black solid 5px;
+	border-left: black solid 2px;
+	border-right: black solid 2px;
 	border-radius: 10px;
 }
 section{
@@ -85,6 +87,7 @@ section .wave.wave4{
 	color:white;
 	font-size:50;
 	font-family:Century Gothic;
+	border-bottom:black solid 1px;
 }
 .zagolovok:hover{
 	color:red;
@@ -98,7 +101,7 @@ games{
 	width:25%;
 	background-color:rgba(0, 0, 0,0.89);
 	float:left;
-	border:1px solid #FFF;
+	border:1px solid #000;
 	color:white;
 	font-size:40;
 	height:22%;

@@ -3,6 +3,7 @@
 	margin:0;
 }
 #window{
+	/*margin-top:0.1%;*/
 	margin-left: 19%;
 	float: left;
 	margin-right: 1%;
@@ -11,15 +12,39 @@
 	width:100%;
 	background-color:rgba(0,0,0,0.7);
 	color:white;
-	font-size:120%;
+	font-size:100%;
 	font-family:Century Gothic;
+	border-bottom: black solid 1px;
 }
 .zagolovok:hover{
 	color:red;
 }
 body{
-	background-image:url("Images/bg.jpg");
+	background-image:url("Images/1.png");
 }
 #control{
 	float: left;
+}
+canvas{
+	border:2px solid black;
+}
+button{
+	border: 2px solid black;
+	margin-top: 2%;
+	margin-left:10%; 
+	font-size:300%;
+}
+img{
+	border:2px solid black;
+}
+marquee{
+	float:left;
+	position: fixed;
+	align-content: center;
+	bottom:0;
+	left:0;
+	right:0;
+	color:white;
+	font-size:200%;
+	background-color: rgba(0,0,0,0.7);
 }
